@@ -1,0 +1,21 @@
+## Interface: 110002
+## Title: Actionbars Became |cffFF0055Funky|r Options
+## Notes: |cffF0E68COptions for the |cffFF0055Actionbars|r Became |cffFF0055Funky|r|r!
+## IconTexture: Interface\HELPFRAME\HelpIcon-CharacterStuck
+## DefaultState: enabled
+## Dependencies: ABF, ABF_Arts
+## Version: 1.10
+## Author: The_Indolent
+## X-Website: https://panosanastasiou.rocks/
+
+ABF_Options_0.xml
+ABF_Options_1.xml
+ABF_Options_2.xml
+ABF_Options_3.xml
+ABF_Options_4.xml
+ABF_Options_5.xml
+ABF_Options_6.xml
+ABF_Options_7.xml
+ABF_Options_8.xml
+ABF_Options_9.xml
+ABF_Options_10.xml

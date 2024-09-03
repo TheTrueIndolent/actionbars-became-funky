@@ -1,0 +1,78 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+<!-- Panel in menu game -->
+	<Frame name="abfOptions0" inherits="abfOptionsPanel" >
+		<Scripts>
+			<OnLoad>
+				self:RegisterEvent("PLAYER_LOGIN")
+			</OnLoad>
+		</Scripts>
+		<Frames>
+<!-- Button 1 -->
+			<Button name="$parentButton1" inherits="abfOptionsButton">
+				<Anchors>
+					<Anchor point="BOTTOM" relativePoint="BOTTOM" x="0" y="68"/>
+				</Anchors>
+			</Button>
+		</Frames>
+	</Frame>
+<!-- Tabs panel -->
+	<Frame name="abfOptions00" inherits="abfTabsPanel" parent="UIParent">
+		<Anchors>
+			<Anchor point="RIGHT" relativePoint="RIGHT" x="0" y="0"/>
+		</Anchors>
+		<Frames>
+			<Button name="$parentTab1" inherits="abfTabsButton">
+				<Anchors>
+					<Anchor point="TOPRIGHT" relativePoint="TOPRIGHT" x="0" y="-24"/>
+				</Anchors>
+			</Button>
+			<Button name="$parentTab2" inherits="abfTabsButton">
+				<Anchors>
+					<Anchor point="TOP" relativeTo="$parentTab1" relativePoint="BOTTOM" x="0" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="$parentTab3" inherits="abfTabsButton">
+				<Anchors>
+					<Anchor point="TOP" relativeTo="$parentTab2" relativePoint="BOTTOM" x="0" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="$parentTab4" inherits="abfTabsButton">
+				<Anchors>
+					<Anchor point="TOP" relativeTo="$parentTab3" relativePoint="BOTTOM" x="0" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="$parentTab5" inherits="abfTabsButton">
+				<Anchors>
+					<Anchor point="TOP" relativeTo="$parentTab4" relativePoint="BOTTOM" x="0" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="$parentTab6" inherits="abfTabsButton">
+				<Anchors>
+					<Anchor point="TOP" relativeTo="$parentTab5" relativePoint="BOTTOM" x="0" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="$parentTab7" inherits="abfTabsButton">
+				<Anchors>
+					<Anchor point="TOP" relativeTo="$parentTab6" relativePoint="BOTTOM" x="0" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="$parentTab8" inherits="abfTabsButton">
+				<Anchors>
+					<Anchor point="TOP" relativeTo="$parentTab7" relativePoint="BOTTOM" x="0" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="$parentTab9" inherits="abfTabsButton">
+				<Anchors>
+					<Anchor point="TOP" relativeTo="$parentTab8" relativePoint="BOTTOM" x="0" y="0"/>
+				</Anchors>
+			</Button>
+			<Button name="$parentTab10" inherits="abfTabsButton">
+				<Anchors>
+					<Anchor point="TOP" relativeTo="$parentTab9" relativePoint="BOTTOM" x="0" y="0"/>
+				</Anchors>
+			</Button>
+		</Frames>
+	</Frame>
+	<Script file="ABF_Options_0.lua"/>
+</Ui>

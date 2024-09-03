@@ -1,0 +1,272 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+	<Frame name="abfAnimation" parent="UIParent" frameStrata="MEDIUM">
+		<Animations>
+<!-- Animation for the background bar center 1 -->
+			<AnimationGroup name="$parentBar1Background" looping="REPEAT" setToFinalAlpha="true">
+				<Path parentKey="Move1" order="1" startDelay="0" duration="1.75" curve="SMOOTH">
+					<ControlPoints>
+						<ControlPoint name="$parentPath1"/>
+					</ControlPoints>
+				</Path>
+				<Path parentKey="Move2" order="2" startDelay="0" duration="1.75" curve="SMOOTH">
+					<ControlPoints>
+						<ControlPoint name="$parentPath2"/>
+					</ControlPoints>
+				</Path>
+			</AnimationGroup>
+<!-- Animation for the background bar center 2 -->
+			<AnimationGroup name="$parentBar2Background" looping="REPEAT" setToFinalAlpha="true">
+				<Path parentKey="Move1" order="1" startDelay="0" duration="1.75" curve="SMOOTH">
+					<ControlPoints>
+						<ControlPoint name="$parentPath1"/>
+					</ControlPoints>
+				</Path>
+				<Path parentKey="Move2" order="2" startDelay="0" duration="1.75" curve="SMOOTH">
+					<ControlPoints>
+						<ControlPoint name="$parentPath2"/>
+					</ControlPoints>
+				</Path>
+			</AnimationGroup>
+<!-- Animation for the background bar center 3 -->
+			<AnimationGroup name="$parentBar3Background" looping="REPEAT" setToFinalAlpha="true">
+				<Path parentKey="Move1" order="1" startDelay="0" duration="1.75" curve="SMOOTH">
+					<ControlPoints>
+						<ControlPoint name="$parentPath1"/>
+					</ControlPoints>
+				</Path>
+				<Path parentKey="Move2" order="2" startDelay="0" duration="1.75" curve="SMOOTH">
+					<ControlPoints>
+						<ControlPoint name="$parentPath2"/>
+					</ControlPoints>
+				</Path>
+			</AnimationGroup>
+<!-- Animation for the background bar center 4 -->
+			<AnimationGroup name="$parentBar4Background" looping="REPEAT" setToFinalAlpha="true">
+				<Path parentKey="Move1" order="1" startDelay="0" duration="1.75" curve="SMOOTH">
+					<ControlPoints>
+						<ControlPoint name="$parentPath1"/>
+					</ControlPoints>
+				</Path>
+				<Path parentKey="Move2" order="2" startDelay="0" duration="1.75" curve="SMOOTH">
+					<ControlPoints>
+						<ControlPoint name="$parentPath2"/>
+					</ControlPoints>
+				</Path>
+			</AnimationGroup>
+<!-- Animation for the background bar center 5 -->
+			<AnimationGroup name="$parentBar5Background" looping="REPEAT" setToFinalAlpha="true">
+				<Path parentKey="Move1" order="1" startDelay="0" duration="1.75" curve="SMOOTH">
+					<ControlPoints>
+						<ControlPoint name="$parentPath1"/>
+					</ControlPoints>
+				</Path>
+				<Path parentKey="Move2" order="2" startDelay="0" duration="1.75" curve="SMOOTH">
+					<ControlPoints>
+						<ControlPoint name="$parentPath2"/>
+					</ControlPoints>
+				</Path>
+			</AnimationGroup>
+<!-- Animation for the background bar center 6 -->
+			<AnimationGroup name="$parentBar6Background" looping="REPEAT" setToFinalAlpha="true">
+				<Path parentKey="Move1" order="1" startDelay="0" duration="1.75" curve="SMOOTH">
+					<ControlPoints>
+						<ControlPoint name="$parentPath1"/>
+					</ControlPoints>
+				</Path>
+				<Path parentKey="Move2" order="2" startDelay="0" duration="1.75" curve="SMOOTH">
+					<ControlPoints>
+						<ControlPoint name="$parentPath2"/>
+					</ControlPoints>
+				</Path>
+			</AnimationGroup>
+<!-- Animation for the background bar center 7 -->
+			<AnimationGroup name="$parentBar7Background" looping="REPEAT" setToFinalAlpha="true">
+				<Path parentKey="Move1" order="1" startDelay="0" duration="1.75" curve="SMOOTH">
+					<ControlPoints>
+						<ControlPoint name="$parentPath1"/>
+					</ControlPoints>
+				</Path>
+				<Path parentKey="Move2" order="2" startDelay="0" duration="1.75" curve="SMOOTH">
+					<ControlPoints>
+						<ControlPoint name="$parentPath2"/>
+					</ControlPoints>
+				</Path>
+			</AnimationGroup>
+<!-- Animation for the background bar center 8 -->
+			<AnimationGroup name="$parentBar8Background" looping="REPEAT" setToFinalAlpha="true">
+				<Path parentKey="Move1" order="1" startDelay="0" duration="1.75" curve="SMOOTH">
+					<ControlPoints>
+						<ControlPoint name="$parentPath1"/>
+					</ControlPoints>
+				</Path>
+				<Path parentKey="Move2" order="2" startDelay="0" duration="1.75" curve="SMOOTH">
+					<ControlPoints>
+						<ControlPoint name="$parentPath2"/>
+					</ControlPoints>
+				</Path>
+			</AnimationGroup>
+<!-- Animation for Gryphon - Wyvern left bar 1 -->
+			<AnimationGroup name="$parentBar1GryphonLeft" looping="NONE" setToFinalAlpha="true">
+				<Alpha parentKey="Alpha" duration="0.1" order="1" fromAlpha="0" toAlpha="1" startDelay="0" smoothing="NONE"/>
+				<Path  parentKey="Move" duration="0.1" order="1" startDelay="0.1" curve="SMOOTH">
+					<ControlPoints>
+						<ControlPoint offsetX="48" offsetY="0" />
+					</ControlPoints>
+				</Path>
+				<Scale  parentKey="Scale" duration="0.15" order="1" toScaleX="1.5" toScaleY="1.5" startDelay="0.25" smoothing="OUT"/>
+			</AnimationGroup>
+<!-- Animation for Gryphon - Wyvern Right bar 1 -->
+			<AnimationGroup name="$parentBar1GryphonRight" looping="NONE" setToFinalAlpha="true">
+				<Alpha parentKey="Alpha" duration="0.1" order="1" fromAlpha="0" toAlpha="1" startDelay="0" smoothing="NONE"/>
+				<Path  parentKey="Move" duration="0.1" order="1" startDelay="0.1" curve="SMOOTH">
+					<ControlPoints>
+						<ControlPoint offsetX="-48" offsetY="0" />
+					</ControlPoints>
+				</Path>
+				<Scale  parentKey="Scale" duration="0.15" order="1" toScaleX="1.5" toScaleY="1.5" startDelay="0.25" smoothing="OUT"/>
+			</AnimationGroup>
+<!-- Animation for Gryphon - Wyvern left bar 2 -->
+			<AnimationGroup name="$parentBar2GryphonLeft" looping="NONE" setToFinalAlpha="true">
+				<Alpha parentKey="Alpha" duration="0.1" order="1" fromAlpha="0" toAlpha="1" startDelay="0" smoothing="NONE"/>
+				<Path  parentKey="Move" duration="0.1" order="1" startDelay="0.1" curve="SMOOTH">
+					<ControlPoints>
+						<ControlPoint offsetX="48" offsetY="0" />
+					</ControlPoints>
+				</Path>
+				<Scale  parentKey="Scale" duration="0.15" order="1" toScaleX="1.5" toScaleY="1.5" startDelay="0.25" smoothing="OUT"/>
+			</AnimationGroup>
+<!-- Animation for Gryphon - Wyvern Right bar 2 -->
+			<AnimationGroup name="$parentBar2GryphonRight" looping="NONE" setToFinalAlpha="true">
+				<Alpha parentKey="Alpha" duration="0.1" order="1" fromAlpha="0" toAlpha="1" startDelay="0" smoothing="NONE"/>
+				<Path  parentKey="Move" duration="0.1" order="1" startDelay="0.1" curve="SMOOTH">
+					<ControlPoints>
+						<ControlPoint offsetX="-48" offsetY="0" />
+					</ControlPoints>
+				</Path>
+				<Scale  parentKey="Scale" duration="0.15" order="1" toScaleX="1.5" toScaleY="1.5" startDelay="0.25" smoothing="OUT"/>
+			</AnimationGroup>
+<!-- Animation for Gryphon - Wyvern left bar 3 -->
+			<AnimationGroup name="$parentBar3GryphonLeft" looping="NONE" setToFinalAlpha="true">
+				<Alpha parentKey="Alpha" duration="0.1" order="1" fromAlpha="0" toAlpha="1" startDelay="0" smoothing="NONE"/>
+				<Path  parentKey="Move" duration="0.1" order="1" startDelay="0.1" curve="SMOOTH">
+					<ControlPoints>
+						<ControlPoint offsetX="48" offsetY="0" />
+					</ControlPoints>
+				</Path>
+				<Scale  parentKey="Scale" duration="0.15" order="1" toScaleX="1.5" toScaleY="1.5" startDelay="0.25" smoothing="OUT"/>
+			</AnimationGroup>
+<!-- Animation for Gryphon - Wyvern Right bar 3 -->
+			<AnimationGroup name="$parentBar3GryphonRight" looping="NONE" setToFinalAlpha="true">
+				<Alpha parentKey="Alpha" duration="0.1" order="1" fromAlpha="0" toAlpha="1" startDelay="0" smoothing="NONE"/>
+				<Path  parentKey="Move" duration="0.1" order="1" startDelay="0.1" curve="SMOOTH">
+					<ControlPoints>
+						<ControlPoint offsetX="-48" offsetY="0" />
+					</ControlPoints>
+				</Path>
+				<Scale  parentKey="Scale" duration="0.15" order="1" toScaleX="1.5" toScaleY="1.5" startDelay="0.25" smoothing="OUT"/>
+			</AnimationGroup>
+<!-- Animation for Gryphon - Wyvern left bar 4 -->
+			<AnimationGroup name="$parentBar4GryphonLeft" looping="NONE" setToFinalAlpha="true">
+				<Alpha parentKey="Alpha" duration="0.1" order="1" fromAlpha="0" toAlpha="1" startDelay="0" smoothing="NONE"/>
+				<Path  parentKey="Move" duration="0.1" order="1" startDelay="0.1" curve="SMOOTH">
+					<ControlPoints>
+						<ControlPoint offsetX="48" offsetY="0" />
+					</ControlPoints>
+				</Path>
+				<Scale  parentKey="Scale" duration="0.15" order="1" toScaleX="1.5" toScaleY="1.5" startDelay="0.25" smoothing="OUT"/>
+			</AnimationGroup>
+<!-- Animation for Gryphon - Wyvern Right bar 4 -->
+			<AnimationGroup name="$parentBar4GryphonRight" looping="NONE" setToFinalAlpha="true">
+				<Alpha parentKey="Alpha" duration="0.1" order="1" fromAlpha="0" toAlpha="1" startDelay="0" smoothing="NONE"/>
+				<Path  parentKey="Move" duration="0.1" order="1" startDelay="0.1" curve="SMOOTH">
+					<ControlPoints>
+						<ControlPoint offsetX="-48" offsetY="0" />
+					</ControlPoints>
+				</Path>
+				<Scale  parentKey="Scale" duration="0.15" order="1" toScaleX="1.5" toScaleY="1.5" startDelay="0.25" smoothing="OUT"/>
+			</AnimationGroup>
+<!-- Animation for Gryphon - Wyvern left bar 5 -->
+			<AnimationGroup name="$parentBar5GryphonLeft" looping="NONE" setToFinalAlpha="true">
+				<Alpha parentKey="Alpha" duration="0.1" order="1" fromAlpha="0" toAlpha="1" startDelay="0" smoothing="NONE"/>
+				<Path  parentKey="Move" duration="0.1" order="1" startDelay="0.1" curve="SMOOTH">
+					<ControlPoints>
+						<ControlPoint offsetX="48" offsetY="0" />
+					</ControlPoints>
+				</Path>
+				<Scale  parentKey="Scale" duration="0.15" order="1" toScaleX="1.5" toScaleY="1.5" startDelay="0.25" smoothing="OUT"/>
+			</AnimationGroup>
+<!-- Animation for Gryphon - Wyvern Right bar 5 -->
+			<AnimationGroup name="$parentBar5GryphonRight" looping="NONE" setToFinalAlpha="true">
+				<Alpha parentKey="Alpha" duration="0.1" order="1" fromAlpha="0" toAlpha="1" startDelay="0" smoothing="NONE"/>
+				<Path  parentKey="Move" duration="0.1" order="1" startDelay="0.1" curve="SMOOTH">
+					<ControlPoints>
+						<ControlPoint offsetX="-48" offsetY="0" />
+					</ControlPoints>
+				</Path>
+				<Scale  parentKey="Scale" duration="0.15" order="1" toScaleX="1.5" toScaleY="1.5" startDelay="0.25" smoothing="OUT"/>
+			</AnimationGroup>
+<!-- Animation for Gryphon - Wyvern left bar 6 -->
+			<AnimationGroup name="$parentBar6GryphonLeft" looping="NONE" setToFinalAlpha="true">
+				<Alpha parentKey="Alpha" duration="0.1" order="1" fromAlpha="0" toAlpha="1" startDelay="0" smoothing="NONE"/>
+				<Path  parentKey="Move" duration="0.1" order="1" startDelay="0.1" curve="SMOOTH">
+					<ControlPoints>
+						<ControlPoint offsetX="48" offsetY="0" />
+					</ControlPoints>
+				</Path>
+				<Scale  parentKey="Scale" duration="0.15" order="1" toScaleX="1.5" toScaleY="1.5" startDelay="0.25" smoothing="OUT"/>
+			</AnimationGroup>
+<!-- Animation for Gryphon - Wyvern Right bar 6 -->
+			<AnimationGroup name="$parentBar6GryphonRight" looping="NONE" setToFinalAlpha="true">
+				<Alpha parentKey="Alpha" duration="0.1" order="1" fromAlpha="0" toAlpha="1" startDelay="0" smoothing="NONE"/>
+				<Path  parentKey="Move" duration="0.1" order="1" startDelay="0.1" curve="SMOOTH">
+					<ControlPoints>
+						<ControlPoint offsetX="-48" offsetY="0" />
+					</ControlPoints>
+				</Path>
+				<Scale  parentKey="Scale" duration="0.15" order="1" toScaleX="1.5" toScaleY="1.5" startDelay="0.25" smoothing="OUT"/>
+			</AnimationGroup>
+<!-- Animation for Gryphon - Wyvern left bar 7 -->
+			<AnimationGroup name="$parentBar7GryphonLeft" looping="NONE" setToFinalAlpha="true">
+				<Alpha parentKey="Alpha" duration="0.1" order="1" fromAlpha="0" toAlpha="1" startDelay="0" smoothing="NONE"/>
+				<Path  parentKey="Move" duration="0.1" order="1" startDelay="0.1" curve="SMOOTH">
+					<ControlPoints>
+						<ControlPoint offsetX="48" offsetY="0" />
+					</ControlPoints>
+				</Path>
+				<Scale  parentKey="Scale" duration="0.15" order="1" toScaleX="1.5" toScaleY="1.5" startDelay="0.25" smoothing="OUT"/>
+			</AnimationGroup>
+<!-- Animation for Gryphon - Wyvern Right bar 7 -->
+			<AnimationGroup name="$parentBar7GryphonRight" looping="NONE" setToFinalAlpha="true">
+				<Alpha parentKey="Alpha" duration="0.1" order="1" fromAlpha="0" toAlpha="1" startDelay="0" smoothing="NONE"/>
+				<Path  parentKey="Move" duration="0.1" order="1" startDelay="0.1" curve="SMOOTH">
+					<ControlPoints>
+						<ControlPoint offsetX="-48" offsetY="0" />
+					</ControlPoints>
+				</Path>
+				<Scale  parentKey="Scale" duration="0.15" order="1" toScaleX="1.5" toScaleY="1.5" startDelay="0.25" smoothing="OUT"/>
+			</AnimationGroup>
+<!-- Animation for Gryphon - Wyvern left bar 8 -->
+			<AnimationGroup name="$parentBar8GryphonLeft" looping="NONE" setToFinalAlpha="true">
+				<Alpha parentKey="Alpha" duration="0.1" order="1" fromAlpha="0" toAlpha="1" startDelay="0" smoothing="NONE"/>
+				<Path  parentKey="Move" duration="0.1" order="1" startDelay="0.1" curve="SMOOTH">
+					<ControlPoints>
+						<ControlPoint offsetX="48" offsetY="0" />
+					</ControlPoints>
+				</Path>
+				<Scale  parentKey="Scale" duration="0.15" order="1" toScaleX="1.5" toScaleY="1.5" startDelay="0.25" smoothing="OUT"/>
+			</AnimationGroup>
+<!-- Animation for Gryphon - Wyvern Right bar 8 -->
+			<AnimationGroup name="$parentBar8GryphonRight" looping="NONE" setToFinalAlpha="true">
+				<Alpha parentKey="Alpha" duration="0.1" order="1" fromAlpha="0" toAlpha="1" startDelay="0" smoothing="NONE"/>
+				<Path  parentKey="Move" duration="0.1" order="1" startDelay="0.1" curve="SMOOTH">
+					<ControlPoints>
+						<ControlPoint offsetX="-48" offsetY="0" />
+					</ControlPoints>
+				</Path>
+				<Scale  parentKey="Scale" duration="0.15" order="1" toScaleX="1.5" toScaleY="1.5" startDelay="0.25" smoothing="OUT"/>
+			</AnimationGroup>
+		</Animations>
+	</Frame>
+	<Script file="ABF_Animations.lua" />
+</Ui>
