@@ -1,14 +1,14 @@
 ## Interface: 110002
-## Title: Actionbars Became |cffFF0055Funky|r
-## Notes: |cffF0E68CMake your |cffFF0055action|r bars |cffFF0055Funky|r|r!
-## IconTexture: Interface\HELPFRAME\HelpIcon-CharacterStuck
+## Title: Actionbars Became |cffFF8000Funky|r
+## Notes: |cffF0E68CMake your |cffFF8000action|r bars |cffFF8000Funky|r|r!
+## IconTexture: Interface\DialogFrame\UI-Dialog-Icon-AlertOther
 ## AddonCompartmentFunc: abfMinimapClick
 ## AddonCompartmentFuncOnEnter: abfMinimapOnEnter
 ## AddonCompartmentFuncOnLeave: abfMinimapOnLeave
 ## DefaultState: enabled
 ## SavedVariables: ABFnumber ABFprofile ABFcounterLoading ABFcounterDeleting
 ## SavedVariablesPerCharacter: ABFactionBars
-## Version: 1.10
+## Version: 1.11
 ## Author: The_Indolent
 ## X-Website: https://panosanastasiou.rocks/
 

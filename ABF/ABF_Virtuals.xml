@@ -102,7 +102,7 @@
 					<Scripts>
 						<OnLoad>
 							self:SetTextColor(abfMainColor:GetRGB())
-							self:SetText(C_AddOns.GetAddOnMetadata("ABF", "Title").."|nVersion: "..abfHighColor:WrapTextInColorCode(C_AddOns.GetAddOnMetadata("ABF", "Version")))
+							self:SetText("|T"..C_AddOns.GetAddOnMetadata("ABF", "IconTexture")..":16|t "..C_AddOns.GetAddOnMetadata("ABF", "Title").."|nVersion: "..abfHighColor:WrapTextInColorCode(C_AddOns.GetAddOnMetadata("ABF", "Version")))
 						</OnLoad>
 					</Scripts>
 				</FontString>

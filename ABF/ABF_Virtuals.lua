@@ -1,8 +1,8 @@
 -- Colors --
 abfMainColor = CreateColorFromRGBAHexString("F0E68CFF")
-abfHighColor = CreateColorFromRGBAHexString("FF0055FF")
+abfHighColor = CreateColorFromRGBAHexString("FF8000FF")
 abfNoMainColor = CreateColorFromRGBAHexString("F0E68C00")
-abfNoHighColor = CreateColorFromRGBAHexString("A510BA00")
+abfNoHighColor = CreateColorFromRGBAHexString("FF800000")
 -- function for showing the menu --
 function abfShowMenu()
 	if not abfOptions00:IsShown() then

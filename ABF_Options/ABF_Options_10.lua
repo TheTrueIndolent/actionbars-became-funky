@@ -202,6 +202,7 @@ for i = 2, 8, 1 do
 -- top --
 	_G["abfOptions"..i.."Box3PopOut1Choice1"].Text:SetText("JailersTower")
 	_G["abfOptions"..i.."Box3PopOut1Choice2"].Text:SetText("Horns")
+	_G["abfOptions"..i.."Box3PopOut1Choice3"].Text:SetText("BossHorns")
 -- bottom --
 	_G["abfOptions"..i.."Box4PopOut1Choice1"].Text:SetText("BottomLine1")
 	_G["abfOptions"..i.."Box4PopOut1Choice2"].Text:SetText("SoftCloud")

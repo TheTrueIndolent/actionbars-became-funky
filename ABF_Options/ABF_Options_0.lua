@@ -2,14 +2,14 @@ abfOptions00Tab9:Hide()
 -- taking care of the panel --
 abfOptions0.BGtexture:SetAlpha(0.70)
 abfOptions0.TopTxt:SetText("It would be good when you open the"..abfHighColor:WrapTextInColorCode(" Options' Panel ").."to close the other ones so you can watch what changes you are making!|n|n|T"..C_AddOns.GetAddOnMetadata("ABF", "IconTexture")..":16|t"..abfHighColor:WrapTextInColorCode(" Note: ").."Before setting up the add on, you "..abfHighColor:WrapTextInColorCode("MUST").." go to Game Menu ("..abfHighColor:WrapTextInColorCode("ESC")..") --> "..abfHighColor:WrapTextInColorCode("Edit Mode").." --> Choose the "..abfHighColor:WrapTextInColorCode("Action Bar 1").." and choose - check the ‘"..abfHighColor:WrapTextInColorCode("Hide Bar Art").."’ option. The Bar Art "..abfHighColor:WrapTextInColorCode("MUST").." be hidden, so it won’t cause any trouble.")
-abfOptions0.CenterTxt:SetText("|T"..C_AddOns.GetAddOnMetadata("ABF", "IconTexture")..":16|t"..C_AddOns.GetAddOnMetadata("ABF", "Title").." is an add on that enchants your Action Bars in a "..abfHighColor:WrapTextInColorCode("Funky").." way!|n|nPress the button below to open the options pane!")
+abfOptions0.CenterTxt:SetText("|T"..C_AddOns.GetAddOnMetadata("ABF", "IconTexture")..":16|t "..C_AddOns.GetAddOnMetadata("ABF", "Title").." is an add on that enchants your Action Bars in a "..abfHighColor:WrapTextInColorCode("Funky").." way!|n|nPress the button below to open the options pane!")
 abfOptions0.BottomTxt:SetText("Thank you for using this amazing add-on!|nYou are a |cff00CED1Funky|r and a |cffFF0055Groovy|r person!|nMay the good |cff9400D3Mojo|r be with you!")
 -- button 1 Options Panel --
 abfOptions0Button1.Text:SetText("Options Panel")
 -- enter --
 abfOptions0Button1:SetScript("OnEnter", function(self)
 	abfEnteringMenus(self)
-	GameTooltip:SetText("|T"..C_AddOns.GetAddOnMetadata("ABF", "IconTexture")..":16|t"..abfMainColor:WrapTextInColorCode(C_AddOns.GetAddOnMetadata("ABF", "Title")).."|nClick: "..abfMainColor:WrapTextInColorCode("Open the main panel of settings!")) 
+	GameTooltip:SetText("|T"..C_AddOns.GetAddOnMetadata("ABF", "IconTexture")..":16|t "..abfMainColor:WrapTextInColorCode(C_AddOns.GetAddOnMetadata("ABF", "Title")).."|nClick: "..abfMainColor:WrapTextInColorCode("Open the main panel of settings!")) 
 end)
 -- leave --
 abfOptions0Button1:SetScript("OnLeave", abfLeavingMenus)
@@ -59,7 +59,7 @@ end)
 local function EventsTime(self, event, arg1, arg2, arg3, arg4)
 	if event == "PLAYER_LOGIN" then
 		local category = Settings.RegisterCanvasLayoutCategory(self, "ABF")
-		category:SetName(C_AddOns.GetAddOnMetadata("ABF", "Title"))
+		category:SetName("|T"..C_AddOns.GetAddOnMetadata("ABF", "IconTexture")..":16:16:0:-6|t "..C_AddOns.GetAddOnMetadata("ABF", "Title"))
 		Settings.RegisterAddOnCategory(category)
 	end
 end

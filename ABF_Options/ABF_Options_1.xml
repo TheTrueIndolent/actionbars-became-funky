@@ -150,6 +150,7 @@
 						<Frames>
 							<Button name="$parentChoice1" inherits="abfPopOutButton"/>
 							<Button name="$parentChoice2" inherits="abfPopOutButton"/>
+							<Button name="$parentChoice3" inherits="abfPopOutButton"/>
 						</Frames>
 						<Layers>
 							<Layer level="OVERLAY" textureSubLevel="8">

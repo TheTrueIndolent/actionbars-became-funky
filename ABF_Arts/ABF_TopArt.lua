@@ -91,3 +91,37 @@ local TopTexture = MultiBar7Button1:CreateTexture("$parentHornsLeft", "ARTWORK",
 HornsLeft(MultiBar7Button1HornsLeft, MultiBar7)
 local TopTexture = MultiBar7Button1:CreateTexture("$parentHornsRight", "ARTWORK", nil, 0)
 HornsRight(MultiBar7Button1HornsRight, MultiBar7)
+-- Boss Horns --
+local function BossHorns(self, point)
+	self:SetAtlas("BossBanner-TopFillagree", true, "LINEAR")
+	self:SetDesaturated(true)
+	self:ClearAllPoints()
+	self:SetPoint("BOTTOM", point, "TOP", 0, -21)
+	self:Hide()
+end
+-- Action Bar 1 --
+local TopTexture = ActionButton1:CreateTexture("$parentBossHorns", "ARTWORK", nil, 0)
+BossHorns(ActionButton1BossHorns, MainMenuBar)
+ActionButton1BossHorns:ClearAllPoints()
+ActionButton1BossHorns:SetPoint("BOTTOM", MainMenuBar, "TOP", 0, -15)
+-- Action Bar 2 --
+local TopTexture = MultiBarBottomLeftButton1:CreateTexture("$parentBossHorns", "ARTWORK", nil, 0)
+BossHorns(MultiBarBottomLeftButton1BossHorns, MultiBarBottomLeft)
+-- Action Bar 3 --
+local TopTexture = MultiBarBottomRightButton1:CreateTexture("$parentBossHorns", "ARTWORK", nil, 0)
+BossHorns(MultiBarBottomRightButton1BossHorns, MultiBarBottomRight)
+-- Action Bar 4 --
+local TopTexture = MultiBarRightButton1:CreateTexture("$parentBossHorns", "ARTWORK", nil, 0)
+BossHorns(MultiBarRightButton1BossHorns, MultiBarRight)
+-- Action Bar 5 --
+local TopTexture = MultiBarLeftButton1:CreateTexture("$parentBossHorns", "ARTWORK", nil, 0)
+BossHorns(MultiBarLeftButton1BossHorns, MultiBarLeft)
+-- Action Bar 6 --
+local TopTexture = MultiBar5Button1:CreateTexture("$parentBossHorns", "ARTWORK", nil, 0)
+BossHorns(MultiBar5Button1BossHorns, MultiBar5)
+-- Action Bar 7 --
+local TopTexture = MultiBar6Button1:CreateTexture("$parentBossHorns", "ARTWORK", nil, 0)
+BossHorns(MultiBar6Button1BossHorns, MultiBar6)
+-- Action Bar 8 --
+local TopTexture = MultiBar7Button1:CreateTexture("$parentBossHorns", "ARTWORK", nil, 0)
+BossHorns(MultiBar7Button1BossHorns, MultiBar7)

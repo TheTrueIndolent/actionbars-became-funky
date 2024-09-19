@@ -355,7 +355,7 @@ abfOptions4Box3PopOut1Choice0:HookScript("OnClick", function(self, button, down)
 		abfSavedArtTop("MultiBarRight", "Bar4")
 	end
 end)
-for i = 1, 2, 1 do
+for i = 1, 3, 1 do
 	_G["abfOptions4Box3PopOut1Choice"..i]:SetParent(abfOptions4Box3PopOut1Choice0)
 	_G["abfOptions4Box3PopOut1Choice"..i]:SetPoint("TOP", _G["abfOptions4Box3PopOut1Choice"..i-1], "BOTTOM", 0, 0)
 	_G["abfOptions4Box3PopOut1Choice"..i]:HookScript("OnClick", function(self, button, down)

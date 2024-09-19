@@ -371,7 +371,8 @@ abfOptions1Box4PopOut1Choice0:HookScript("OnClick", function(self, button, down)
 end)
 abfOptions1Box4PopOut1Choice1.Text:SetText("JailersTower")
 abfOptions1Box4PopOut1Choice2.Text:SetText("Horns")
-for i = 1, 2, 1 do
+abfOptions1Box4PopOut1Choice3.Text:SetText("BossHorns")
+for i = 1, 3, 1 do
 	_G["abfOptions1Box4PopOut1Choice"..i]:SetParent(abfOptions1Box4PopOut1Choice0)
 	_G["abfOptions1Box4PopOut1Choice"..i]:SetPoint("TOP", _G["abfOptions1Box4PopOut1Choice"..i-1], "BOTTOM", 0, 0)
 	_G["abfOptions1Box4PopOut1Choice"..i]:HookScript("OnClick", function(self, button, down)
