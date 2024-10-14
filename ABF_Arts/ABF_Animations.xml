@@ -1,0 +1,32 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+<!-- Gryphon/Wyvern Animation -->
+	<AnimationGroup name="abfGryphon_WyvernAnimation" looping="NONE" setToFinalAlpha="true" virtual="true">
+		<Alpha parentKey="Alpha" duration="0.1" order="1" fromAlpha="0" toAlpha="1" startDelay="0" smoothing="NONE"/>
+		<Path  parentKey="Move" duration="0.1" order="1" startDelay="0.1" curve="SMOOTH">
+			<ControlPoints>
+				<ControlPoint parentKey="Point"/>
+			</ControlPoints>
+		</Path>
+		<Scale parentKey="Scale" duration="0.15" order="1" toScaleX="1.5" toScaleY="1.5" startDelay="0.25" smoothing="OUT"/>
+	</AnimationGroup>
+<!-- jailers Tower -->
+	<AnimationGroup name="abfJailersTowerAnimation" looping="REPEAT" setToFinalAlpha="true" virtual="true">
+		<Translation parentKey="MoveGlowies1" order="1" duration="4" offsetX="0" offsetY="40" smoothing="NONE"/>
+		<Alpha parentKey="Glowies1" order="1" duration="1" fromAlpha="0" toAlpha="0.5" smoothing="NONE"/>
+		<Alpha parentKey="Glowies2" order="1" startDelay="1" duration="1" fromAlpha="0.5" toAlpha="0.25" smoothing="NONE"/>
+		<Alpha parentKey="Glowies3" order="1" startDelay="2" duration="1" fromAlpha="0.25" toAlpha="1" smoothing="NONE"/>
+		<Scale parentKey="Scale1" order="1" startDelay="2" duration="1" toScaleX="1.05" toScaleY="1.05" smoothing="NONE"/>
+		<Scale parentKey="Scale2" order="1" startDelay="3" duration="1" toScaleX="1" toScaleY="1" smoothing="NONE"/>
+		<Alpha parentKey="Glowies4" order="1" startDelay="3" duration="1" fromAlpha="1" toAlpha="0" smoothing="NONE"/>
+	</AnimationGroup>
+<!-- soft cloud -->
+	<AnimationGroup name="abfSoftCloudAnimation" looping="REPEAT" setToFinalAlpha="true" virtual="true">
+		<Alpha parentKey="Glowies1" order="1" duration="1" fromAlpha="0" toAlpha="0.5" smoothing="NONE"/>
+		<Alpha parentKey="Glowies2" order="1" startDelay="1" duration="1" fromAlpha="0.5" toAlpha="0.25" smoothing="NONE"/>
+		<Alpha parentKey="Glowies3" order="1" startDelay="2" duration="1" fromAlpha="0.25" toAlpha="1" smoothing="NONE"/>
+		<Alpha parentKey="Glowies4" order="1" startDelay="3" duration="1" fromAlpha="1" toAlpha="0" smoothing="NONE"/>
+	</AnimationGroup>
+	<Script file="ABF_Animations.lua"/>
+	<Include file="ABF_Animations_Functions.lua"/>
+</Ui>
