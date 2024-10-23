@@ -5,37 +5,38 @@ abfNoMainColor = CreateColorFromRGBAHexString("F0E68C00")
 abfNoHighColor = CreateColorFromRGBAHexString("FF800000")
 -- function for showing the menu --
 function abfShowMenu()
-	if not abfOptions00:IsShown() then
-		abfOptions00:Show()
+	if not InCombatLockdown() then
+		if not abfOptions00:IsShown() then
+			abfOptions00:Show()
+		else
+			abfOptions00:Hide()
+		end
 	else
-		abfOptions00:Hide()
+		local abfTime = GameTime_GetTime(false)
+		DEFAULT_CHAT_FRAME:AddMessage(abfTime.." |T"..C_AddOns.GetAddOnMetadata("ABF", "IconTexture")..":16:16|t ["..abfMainColor:WrapTextInColorCode(C_AddOns.GetAddOnMetadata("ABF", "Title")).."] While you are in combat, you can't do this!")
 	end
 end
---[[ Slash Command --
-SLASH_FUNKYMOJOCHAGER1, SLASH_FUNKYMOJOCHAGER2 = '/abf', '/actionbarbecamefunky'
-function SlashCmdList.FUNKYMOJOCHAGER(msg, editBox)
-	abfShowMenu()
-end]]
-
 RegisterNewSlashCommand(abfShowMenu, "abf", "actionbarbecamefunky")
 -- Mini Map Button Functions --
--- Clicky Clicky --
-function abfMinimapClick(addonName, buttonName)
-	if buttonName == "LeftButton" then
-		abfShowMenu()
-	end
-end
--- On Enter --
-function abfMinimapOnEnter()
-	GameTooltip_ClearStatusBars(GameTooltip)
-	GameTooltip_SetDefaultAnchor(GameTooltip, UIParent)
-	GameTooltip:SetText("|T"..C_AddOns.GetAddOnMetadata("ABF", "IconTexture")..":16|t"..abfMainColor:WrapTextInColorCode(C_AddOns.GetAddOnMetadata("ABF", "Title")).."|nClick: "..abfMainColor:WrapTextInColorCode("Open the main panel of settings!")) 
-	GameTooltip:Show()
-end
--- On Leave --
-function abfMinimapOnLeave()
-	GameTooltip:Hide()
-end
+AddonCompartmentFrame:RegisterAddon({
+	text = abfMainColor:WrapTextInColorCode(C_AddOns.GetAddOnMetadata("ABF", "Title")),
+	icon = C_AddOns.GetAddOnMetadata("ABF", "IconTexture"),
+	notCheckable = true,
+	func = function(button, menuInputData, menu)
+		local buttonName = menuInputData.buttonName
+		if buttonName == "LeftButton" then
+			abfShowMenu()
+		end
+	end,
+	funcOnEnter = function(button)
+		MenuUtil.ShowTooltip(button, function(tooltip)
+			tooltip:SetText("|T"..C_AddOns.GetAddOnMetadata("ABF", "IconTexture")..":16:16|t "..abfMainColor:WrapTextInColorCode(C_AddOns.GetAddOnMetadata("ABF", "Title")).."|nLeft Click: "..abfMainColor:WrapTextInColorCode("Open the main panel of settings!"))
+		end)
+	end,
+	funcOnLeave = function(button)
+		MenuUtil.HideTooltip(button)
+	end,
+})
 -- functions for the buttons and popouts --
 -- on enter --
 function abfEnteringMenus(self)
