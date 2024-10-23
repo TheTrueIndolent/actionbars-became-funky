@@ -1,5 +1,5 @@
 ### Title: Actionbars Became Funky
-### Addon - Script
+### Category: Addon - Script
 ### Game: World of Warcraft
 
 Actionbars Became Funky (ABF) is an add on that enchants the default action bars!
