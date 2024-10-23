@@ -1,14 +1,11 @@
-## Interface: 110002
+## Interface: 110005
 ## Title: Actionbars Became |cffFF8000Funky|r
 ## Notes: |cffF0E68CMake your |cffFF8000action|r bars |cffFF8000Funky|r|r!
 ## IconTexture: Interface\DialogFrame\UI-Dialog-Icon-AlertOther
-## AddonCompartmentFunc: abfMinimapClick
-## AddonCompartmentFuncOnEnter: abfMinimapOnEnter
-## AddonCompartmentFuncOnLeave: abfMinimapOnLeave
 ## DefaultState: enabled
 ## SavedVariables: ABFnumber ABFprofile ABFcounterLoading ABFcounterDeleting
 ## SavedVariablesPerCharacter: ABFactionBars ABFstatusTrackingBar
-## Version: 1.12
+## Version: 1.13
 ## Author: The_Indolent
 ## X-Website: https://panosanastasiou.rocks/
 
