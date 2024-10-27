@@ -1,0 +1,17 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+	<Frame name="abfZlave" parent="UIParent" frameStrata="BACKGROUND" frameLevel="0" hidden="true">
+		<Scripts>
+			<OnLoad>
+				self:RegisterEvent("PLAYER_LOGIN")
+				self:RegisterEvent("ADDON_LOADED")
+				self:RegisterEvent("PLAYER_REGEN_ENABLED")
+				self:RegisterEvent("PLAYER_REGEN_DISABLED")
+				self:RegisterEvent("PLAYER_XP_UPDATE")
+				self:RegisterEvent("HONOR_XP_UPDATE")
+			</OnLoad>
+		</Scripts>
+	</Frame>
+	<Frame name="abfAnimationFrame" parent="UIParent" frameStrata="BACKGROUND" frameLevel="0"/>
+	<Script file="ABF_Zlave.lua" />
+</Ui>
