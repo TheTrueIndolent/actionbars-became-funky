@@ -4,7 +4,7 @@
 ## IconTexture: Interface\DialogFrame\UI-Dialog-Icon-AlertOther
 ## DefaultState: enabled
 ## Dependencies: ABF
-## Version: 1.14
+## Version: 1.15
 ## Author: The_Indolent
 ## X-Website: https://panosanastasiou.rocks/
 
