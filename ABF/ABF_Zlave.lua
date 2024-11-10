@@ -7,9 +7,6 @@ local function CreateGlobalVariables()
 	abfNoHighColor = CreateColorFromRGBAHexString("FF800000")
 -- class color --
 	abfClassColor = C_ClassColor.GetClassColor(select(2, C_PlayerInfo.GetClass(PlayerLocation:CreateFromUnit("player"))))
--- faction color --
-	abfFaction = C_CreatureInfo.GetFactionInfo(C_PlayerInfo.GetRace(PlayerLocation:CreateFromUnit("player")))
-	abfFactionColor = CreateColor(_G["PLAYER_FACTION_COLOR_"..string.upper(abfFaction.name)]:GetRGB())
 -- function for local colors --
 	function abfGetLocalColor(self1)
 		return self1.r, self1.g, self1.b, self1.a
