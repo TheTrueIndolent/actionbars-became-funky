@@ -5,7 +5,7 @@
 ## DefaultState: enabled
 ## Dependencies: ABF, ABF_Arts
 ## LoadOnDemand: 1
-## Version: 1.14
+## Version: 1.15
 ## Author: The_Indolent
 ## X-Website: https://panosanastasiou.rocks/
 
