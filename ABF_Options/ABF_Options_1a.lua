@@ -244,12 +244,12 @@ abfOptions1aBox1PopOut4:SetScript("OnLeave", abfLeavingMenus)
 abfClickPopOut(abfOptions1aBox1PopOut4, abfOptions1aBox1PopOut4Choice0)
 -- naming at Options10 --
 -- sort --
-for i = 1, 3, 1 do
+for i = 1, 2, 1 do
 	_G["abfOptions1aBox1PopOut4Choice"..i]:SetParent(abfOptions1aBox1PopOut4Choice0)
 	_G["abfOptions1aBox1PopOut4Choice"..i]:SetPoint("TOP", _G["abfOptions1aBox1PopOut4Choice"..i-1], "BOTTOM", 0, 0)
 end
 -- click --
-for i = 0, 3, 1 do
+for i = 0, 2, 1 do
 	_G["abfOptions1aBox1PopOut4Choice"..i]:HookScript("OnClick", function(self, button, down)
 		if button == "LeftButton" and down == false then
 			ABFactionBars["Bar1"]["Top"]["AnimationColorOptions"] = self.Text:GetText()
@@ -260,9 +260,6 @@ for i = 0, 3, 1 do
 				abfSavedTopArtAnimation("Bar1", MainMenuBar)
 			elseif ABFactionBars["Bar1"]["Top"]["AnimationColorOptions"] == "Class Color" then
 				ABFactionBars["Bar1"]["Top"]["AnimationColor"] = CreateColor(abfClassColor:GetRGB())
-				abfSavedTopArtAnimation("Bar1", MainMenuBar)
-			elseif ABFactionBars["Bar1"]["Top"]["AnimationColorOptions"] == "Faction Color" then
-				ABFactionBars["Bar1"]["Top"]["AnimationColor"] = CreateColor(abfFactionColor:GetRGB())
 				abfSavedTopArtAnimation("Bar1", MainMenuBar)
 			elseif ABFactionBars["Bar1"]["Top"]["AnimationColorOptions"] == "Custom Color" then
 				abfShowColorPicker("Bar1", MainMenuBar, "Top", abfSavedTopArtAnimation, "AnimationColor")
@@ -283,12 +280,12 @@ abfOptions1aBox2PopOut1:SetScript("OnLeave", abfLeavingMenus)
 abfClickPopOut(abfOptions1aBox2PopOut1, abfOptions1aBox2PopOut1Choice0)
 -- naming at Options10 --
 -- sort --
-for i = 1, 3, 1 do
+for i = 1, 2, 1 do
 	_G["abfOptions1aBox2PopOut1Choice"..i]:SetParent(abfOptions1aBox2PopOut1Choice0)
 	_G["abfOptions1aBox2PopOut1Choice"..i]:SetPoint("TOP", _G["abfOptions1aBox2PopOut1Choice"..i-1], "BOTTOM", 0, 0)
 end
 -- click --
-for i = 0, 3, 1 do
+for i = 0, 2, 1 do
 	_G["abfOptions1aBox2PopOut1Choice"..i]:HookScript("OnClick", function(self, button, down)
 		if button == "LeftButton" and down == false then
 			ABFactionBars["Bar1"]["Top"]["ArtColorOptions"] = self.Text:GetText()
@@ -300,10 +297,6 @@ for i = 0, 3, 1 do
 				abfSavedColorTop("Bar1", MainMenuBar)
 			elseif ABFactionBars["Bar1"]["Top"]["ArtColorOptions"] == "Class Color" then
 				ABFactionBars["Bar1"]["Top"]["ArtColor"] = CreateColor(abfClassColor:GetRGB())
-				if abfOptions1aBox2Slider1:IsShown() then abfOptions1aBox2Slider1:Hide() end
-				abfSavedColorTop("Bar1", MainMenuBar)
-			elseif ABFactionBars["Bar1"]["Top"]["ArtColorOptions"] == "Faction Color" then
-				ABFactionBars["Bar1"]["Top"]["ArtColor"] = CreateColor(abfFactionColor:GetRGB())
 				if abfOptions1aBox2Slider1:IsShown() then abfOptions1aBox2Slider1:Hide() end
 				abfSavedColorTop("Bar1", MainMenuBar)
 			elseif ABFactionBars["Bar1"]["Top"]["ArtColorOptions"] == "Custom Color" then
@@ -346,12 +339,12 @@ abfOptions1aBox3PopOut1:SetScript("OnLeave", abfLeavingMenus)
 abfClickPopOut(abfOptions1aBox3PopOut1, abfOptions1aBox3PopOut1Choice0)
 -- naming at Options10 --
 -- sort --
-for i = 1, 3, 1 do
+for i = 1, 2, 1 do
 	_G["abfOptions1aBox3PopOut1Choice"..i]:SetParent(abfOptions1aBox3PopOut1Choice0)
 	_G["abfOptions1aBox3PopOut1Choice"..i]:SetPoint("TOP", _G["abfOptions1aBox3PopOut1Choice"..i-1], "BOTTOM", 0, 0)
 end
 -- click --
-for i = 0, 3, 1 do
+for i = 0, 2, 1 do
 	_G["abfOptions1aBox3PopOut1Choice"..i]:HookScript("OnClick", function(self, button, down)
 		if button == "LeftButton" and down == false then
 			ABFactionBars["Bar1"]["Top"]["ArtGradientOptions1"] = self.Text:GetText()
@@ -362,9 +355,6 @@ for i = 0, 3, 1 do
 				abfSavedColorTop("Bar1", MainMenuBar)
 			elseif ABFactionBars["Bar1"]["Top"]["ArtGradientOptions1"] == "Class Color" then
 				ABFactionBars["Bar1"]["Top"]["ArtGradientColor1"] = CreateColor(abfClassColor:GetRGB())
-				abfSavedColorTop("Bar1", MainMenuBar)
-			elseif ABFactionBars["Bar1"]["Top"]["ArtGradientOptions1"] == "Faction Color" then
-				ABFactionBars["Bar1"]["Top"]["ArtGradientColor1"] = CreateColor(abfFactionColor:GetRGB())
 				abfSavedColorTop("Bar1", MainMenuBar)
 			elseif ABFactionBars["Bar1"]["Top"]["ArtGradientOptions1"] == "Custom Color" then
 				abfShowColorPicker("Bar1", MainMenuBar, "Top", abfSavedColorTop, "ArtGradientColor1")
@@ -384,12 +374,12 @@ abfOptions1aBox3PopOut2:SetScript("OnLeave", abfLeavingMenus)
 abfClickPopOut(abfOptions1aBox3PopOut2, abfOptions1aBox3PopOut2Choice0)
 -- naming at Options10 --
 -- sort --
-for i = 1, 3, 1 do
+for i = 1, 2, 1 do
 	_G["abfOptions1aBox3PopOut2Choice"..i]:SetParent(abfOptions1aBox3PopOut2Choice0)
 	_G["abfOptions1aBox3PopOut2Choice"..i]:SetPoint("TOP", _G["abfOptions1aBox3PopOut2Choice"..i-1], "BOTTOM", 0, 0)
 end
 -- click --
-for i = 0, 3, 1 do
+for i = 0, 2, 1 do
 	_G["abfOptions1aBox3PopOut2Choice"..i]:HookScript("OnClick", function(self, button, down)
 		if button == "LeftButton" and down == false then
 			ABFactionBars["Bar1"]["Top"]["ArtGradientOptions2"] = self.Text:GetText()
@@ -400,9 +390,6 @@ for i = 0, 3, 1 do
 				abfSavedColorTop("Bar1", MainMenuBar)
 			elseif ABFactionBars["Bar1"]["Top"]["ArtGradientOptions2"] == "Class Color" then
 				ABFactionBars["Bar1"]["Top"]["ArtGradientColor2"] = CreateColor(abfClassColor:GetRGB())
-				abfSavedColorTop("Bar1", MainMenuBar)
-			elseif ABFactionBars["Bar1"]["Top"]["ArtGradientOptions2"] == "Faction Color" then
-				ABFactionBars["Bar1"]["Top"]["ArtGradientColor2"] = CreateColor(abfFactionColor:GetRGB())
 				abfSavedColorTop("Bar1", MainMenuBar)
 			elseif ABFactionBars["Bar1"]["Top"]["ArtGradientOptions2"] == "Custom Color" then
 				abfShowColorPicker("Bar1", MainMenuBar, "Top", abfSavedColorTop, "ArtGradientColor2")
@@ -549,12 +536,12 @@ abfOptions1aBox4PopOut4:SetScript("OnLeave", abfLeavingMenus)
 abfClickPopOut(abfOptions1aBox4PopOut4, abfOptions1aBox4PopOut4Choice0)
 -- naming at Options10 --
 -- sort --
-for i = 1, 3, 1 do
+for i = 1, 2, 1 do
 	_G["abfOptions1aBox4PopOut4Choice"..i]:SetParent(abfOptions1aBox4PopOut4Choice0)
 	_G["abfOptions1aBox4PopOut4Choice"..i]:SetPoint("TOP", _G["abfOptions1aBox4PopOut4Choice"..i-1], "BOTTOM", 0, 0)
 end
 -- click --
-for i = 0, 3, 1 do
+for i = 0, 2, 1 do
 	_G["abfOptions1aBox4PopOut4Choice"..i]:HookScript("OnClick", function(self, button, down)
 		if button == "LeftButton" and down == false then
 			ABFactionBars["Bar1"]["Bottom"]["AnimationColorOptions"] = self.Text:GetText()
@@ -565,9 +552,6 @@ for i = 0, 3, 1 do
 				--abfSavedAnimationBottomColor("Bar1", MainMenuBar)
 			elseif ABFactionBars["Bar1"]["Bottom"]["AnimationColorOptions"] == "Class Color" then
 				ABFactionBars["Bar1"]["Bottom"]["AnimationColor"] = CreateColor(abfClassColor:GetRGB())
-				--abfSavedAnimationBottomColor("Bar1", MainMenuBar)
-			elseif ABFactionBars["Bar1"]["Bottom"]["AnimationColorOptions"] == "Faction Color" then
-				ABFactionBars["Bar1"]["Bottom"]["AnimationColor"] = CreateColor(abfFactionColor:GetRGB())
 				--abfSavedAnimationBottomColor("Bar1", MainMenuBar)
 			elseif ABFactionBars["Bar1"]["Bottom"]["AnimationColorOptions"] == "Custom Color" then
 				--abfShowColorPicker("Bar1", MainMenuBar, "Bottom", abfSavedAnimationBottomColor, "AnimationColor")
@@ -588,12 +572,12 @@ abfOptions1aBox5PopOut1:SetScript("OnLeave", abfLeavingMenus)
 abfClickPopOut(abfOptions1aBox5PopOut1, abfOptions1aBox5PopOut1Choice0)
 -- naming at Options10 --
 -- sort --
-for i = 1, 3, 1 do
+for i = 1, 2, 1 do
 	_G["abfOptions1aBox5PopOut1Choice"..i]:SetParent(abfOptions1aBox5PopOut1Choice0)
 	_G["abfOptions1aBox5PopOut1Choice"..i]:SetPoint("TOP", _G["abfOptions1aBox5PopOut1Choice"..i-1], "BOTTOM", 0, 0)
 end
 -- click --
-for i = 0, 3, 1 do
+for i = 0, 2, 1 do
 	_G["abfOptions1aBox5PopOut1Choice"..i]:HookScript("OnClick", function(self, button, down)
 		if button == "LeftButton" and down == false then
 			ABFactionBars["Bar1"]["Bottom"]["ArtColorOptions"] = self.Text:GetText()
@@ -605,10 +589,6 @@ for i = 0, 3, 1 do
 				abfSavedColorBottom("Bar1", MainMenuBar)
 			elseif ABFactionBars["Bar1"]["Bottom"]["ArtColorOptions"] == "Class Color" then
 				ABFactionBars["Bar1"]["Bottom"]["ArtColor"] = CreateColor(abfClassColor:GetRGB())
-				if abfOptions1aBox5Slider1:IsShown() then abfOptions1aBox5Slider1:Hide() end
-				abfSavedColorBottom("Bar1", MainMenuBar)
-			elseif ABFactionBars["Bar1"]["Bottom"]["ArtColorOptions"] == "Faction Color" then
-				ABFactionBars["Bar1"]["Bottom"]["ArtColor"] = CreateColor(abfFactionColor:GetRGB())
 				if abfOptions1aBox5Slider1:IsShown() then abfOptions1aBox5Slider1:Hide() end
 				abfSavedColorBottom("Bar1", MainMenuBar)
 			elseif ABFactionBars["Bar1"]["Bottom"]["ArtColorOptions"] == "Custom Color" then
@@ -651,12 +631,12 @@ abfOptions1aBox6PopOut1:SetScript("OnLeave", abfLeavingMenus)
 abfClickPopOut(abfOptions1aBox6PopOut1, abfOptions1aBox6PopOut1Choice0)
 -- naming at Options10 --
 -- sort --
-for i = 1, 3, 1 do
+for i = 1, 2, 1 do
 	_G["abfOptions1aBox6PopOut1Choice"..i]:SetParent(abfOptions1aBox6PopOut1Choice0)
 	_G["abfOptions1aBox6PopOut1Choice"..i]:SetPoint("TOP", _G["abfOptions1aBox6PopOut1Choice"..i-1], "BOTTOM", 0, 0)
 end
 -- click --
-for i = 0, 3, 1 do
+for i = 0, 2, 1 do
 	_G["abfOptions1aBox6PopOut1Choice"..i]:HookScript("OnClick", function(self, button, down)
 		if button == "LeftButton" and down == false then
 			ABFactionBars["Bar1"]["Bottom"]["ArtGradientOptions1"] = self.Text:GetText()
@@ -667,9 +647,6 @@ for i = 0, 3, 1 do
 				abfSavedColorBottom("Bar1", MainMenuBar)
 			elseif ABFactionBars["Bar1"]["Bottom"]["ArtGradientOptions1"] == "Class Color" then
 				ABFactionBars["Bar1"]["Bottom"]["ArtGradientColor1"] = CreateColor(abfClassColor:GetRGB())
-				abfSavedColorBottom("Bar1", MainMenuBar)
-			elseif ABFactionBars["Bar1"]["Bottom"]["ArtGradientOptions1"] == "Faction Color" then
-				ABFactionBars["Bar1"]["Bottom"]["ArtGradientColor1"] = CreateColor(abfFactionColor:GetRGB())
 				abfSavedColorBottom("Bar1", MainMenuBar)
 			elseif ABFactionBars["Bar1"]["Bottom"]["ArtGradientOptions1"] == "Custom Color" then
 				abfShowColorPicker("Bar1", MainMenuBar, "Bottom", abfSavedColorBottom, "ArtGradientColor1")
@@ -689,12 +666,12 @@ abfOptions1aBox6PopOut2:SetScript("OnLeave", abfLeavingMenus)
 abfClickPopOut(abfOptions1aBox6PopOut2, abfOptions1aBox6PopOut2Choice0)
 -- naming at Options10 --
 -- sort --
-for i = 1, 3, 1 do
+for i = 1, 2, 1 do
 	_G["abfOptions1aBox6PopOut2Choice"..i]:SetParent(abfOptions1aBox6PopOut2Choice0)
 	_G["abfOptions1aBox6PopOut2Choice"..i]:SetPoint("TOP", _G["abfOptions1aBox6PopOut2Choice"..i-1], "BOTTOM", 0, 0)
 end
 -- click --
-for i = 0, 3, 1 do
+for i = 0, 2, 1 do
 	_G["abfOptions1aBox6PopOut2Choice"..i]:HookScript("OnClick", function(self, button, down)
 		if button == "LeftButton" and down == false then
 			ABFactionBars["Bar1"]["Bottom"]["ArtGradientOptions2"] = self.Text:GetText()
@@ -705,9 +682,6 @@ for i = 0, 3, 1 do
 				abfSavedColorBottom("Bar1", MainMenuBar)
 			elseif ABFactionBars["Bar1"]["Bottom"]["ArtGradientOptions2"] == "Class Color" then
 				ABFactionBars["Bar1"]["Bottom"]["ArtGradientColor2"] = CreateColor(abfClassColor:GetRGB())
-				abfSavedColorBottom("Bar1", MainMenuBar)
-			elseif ABFactionBars["Bar1"]["Bottom"]["ArtGradientOptions2"] == "Faction Color" then
-				ABFactionBars["Bar1"]["Bottom"]["ArtGradientColor2"] = CreateColor(abfFactionColor:GetRGB())
 				abfSavedColorBottom("Bar1", MainMenuBar)
 			elseif ABFactionBars["Bar1"]["Bottom"]["ArtGradientOptions2"] == "Custom Color" then
 				abfShowColorPicker("Bar1", MainMenuBar, "Bottom", abfSavedColorBottom, "ArtGradientColor2")
@@ -790,12 +764,12 @@ abfOptions1aBox8PopOut1:SetScript("OnLeave", abfLeavingMenus)
 abfClickPopOut(abfOptions1aBox8PopOut1, abfOptions1aBox8PopOut1Choice0)
 -- naming at Options10 --
 -- sort --
-for i = 1, 3, 1 do
+for i = 1, 2, 1 do
 	_G["abfOptions1aBox8PopOut1Choice"..i]:SetParent(abfOptions1aBox8PopOut1Choice0)
 	_G["abfOptions1aBox8PopOut1Choice"..i]:SetPoint("TOP", _G["abfOptions1aBox8PopOut1Choice"..i-1], "BOTTOM", 0, 0)
 end
 -- click --
-for i = 0, 3, 1 do
+for i = 0, 2, 1 do
 	_G["abfOptions1aBox8PopOut1Choice"..i]:HookScript("OnClick", function(self, button, down)
 		if button == "LeftButton" and down == false then
 			ABFactionBars["Bar1"]["NormalTextureColorOptions"] = self.Text:GetText()
@@ -806,9 +780,6 @@ for i = 0, 3, 1 do
 				abfSavedColorNormalTexture("Bar1", MainMenuBar)
 			elseif ABFactionBars["Bar1"]["NormalTextureColorOptions"] == "Class Color" then
 				ABFactionBars["Bar1"]["NormalTextureColor"] = CreateColor(abfClassColor:GetRGB())
-				abfSavedColorNormalTexture("Bar1", MainMenuBar)
-			elseif ABFactionBars["Bar1"]["NormalTextureColorOptions"] == "Faction Color" then
-				ABFactionBars["Bar1"]["NormalTextureColor"] = CreateColor(abfFactionColor:GetRGB())
 				abfSavedColorNormalTexture("Bar1", MainMenuBar)
 			elseif ABFactionBars["Bar1"]["NormalTextureColorOptions"] == "Custom Color" then
 				abfShowColorPickerCD("Bar1", MainMenuBar, "NormalTextureColor", abfSavedColorNormalTexture)
@@ -829,12 +800,12 @@ abfOptions1aBox9PopOut1:SetScript("OnLeave", abfLeavingMenus)
 abfClickPopOut(abfOptions1aBox9PopOut1, abfOptions1aBox9PopOut1Choice0)
 -- naming at Options10 --
 -- sort --
-for i = 1, 3, 1 do
+for i = 1, 2, 1 do
 	_G["abfOptions1aBox9PopOut1Choice"..i]:SetParent(abfOptions1aBox9PopOut1Choice0)
 	_G["abfOptions1aBox9PopOut1Choice"..i]:SetPoint("TOP", _G["abfOptions1aBox9PopOut1Choice"..i-1], "BOTTOM", 0, 0)
 end
 -- click --
-for i = 0, 3, 1 do
+for i = 0, 2, 1 do
 	_G["abfOptions1aBox9PopOut1Choice"..i]:HookScript("OnClick", function(self, button, down)
 		if button == "LeftButton" and down == false then
 			ABFactionBars["Bar1"]["NormalTextureGradientOptions1"] = self.Text:GetText()
@@ -845,9 +816,6 @@ for i = 0, 3, 1 do
 				abfSavedColorNormalTexture("Bar1", MainMenuBar)
 			elseif ABFactionBars["Bar1"]["NormalTextureGradientOptions1"] == "Class Color" then
 				ABFactionBars["Bar1"]["NormalTextureGradient1"] = CreateColor(abfClassColor:GetRGB())
-				abfSavedColorNormalTexture("Bar1", MainMenuBar)
-			elseif ABFactionBars["Bar1"]["NormalTextureGradientOptions1"] == "Faction Color" then
-				ABFactionBars["Bar1"]["NormalTextureGradient1"] = CreateColor(abfFactionColor:GetRGB())
 				abfSavedColorNormalTexture("Bar1", MainMenuBar)
 			elseif ABFactionBars["Bar1"]["NormalTextureGradientOptions1"] == "Custom Color" then
 				abfShowColorPickerCD("Bar1", MainMenuBar, "NormalTextureGradient1", abfSavedColorNormalTexture)
@@ -867,12 +835,12 @@ abfOptions1aBox9PopOut2:SetScript("OnLeave", abfLeavingMenus)
 abfClickPopOut(abfOptions1aBox9PopOut2, abfOptions1aBox9PopOut2Choice0)
 -- naming at Options10 --
 -- sort --
-for i = 1, 3, 1 do
+for i = 1, 2, 1 do
 	_G["abfOptions1aBox9PopOut2Choice"..i]:SetParent(abfOptions1aBox9PopOut2Choice0)
 	_G["abfOptions1aBox9PopOut2Choice"..i]:SetPoint("TOP", _G["abfOptions1aBox9PopOut2Choice"..i-1], "BOTTOM", 0, 0)
 end
 -- click --
-for i = 0, 3, 1 do
+for i = 0, 2, 1 do
 	_G["abfOptions1aBox9PopOut2Choice"..i]:HookScript("OnClick", function(self, button, down)
 		if button == "LeftButton" and down == false then
 			ABFactionBars["Bar1"]["NormalTextureGradientOptions2"] = self.Text:GetText()
@@ -883,9 +851,6 @@ for i = 0, 3, 1 do
 				abfSavedColorNormalTexture("Bar1", MainMenuBar)
 			elseif ABFactionBars["Bar1"]["NormalTextureGradientOptions2"] == "Class Color" then
 				ABFactionBars["Bar1"]["NormalTextureGradient2"] = CreateColor(abfClassColor:GetRGB())
-				abfSavedColorNormalTexture("Bar1", MainMenuBar)
-			elseif ABFactionBars["Bar1"]["NormalTextureGradientOptions2"] == "Faction Color" then
-				ABFactionBars["Bar1"]["NormalTextureGradient2"] = CreateColor(abfFactionColor:GetRGB())
 				abfSavedColorNormalTexture("Bar1", MainMenuBar)
 			elseif ABFactionBars["Bar1"]["NormalTextureGradientOptions2"] == "Custom Color" then
 				abfShowColorPickerCD("Bar1", MainMenuBar, "NormalTextureGradient2", abfSavedColorNormalTexture)
