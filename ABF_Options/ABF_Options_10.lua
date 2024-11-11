@@ -207,21 +207,21 @@ for i = 1, 8, 1 do
 -- naming swipe,edges animation colors --
 	for k = 1, 5, 4 do
 		_G["abfOptions"..i.."Box"..k.."PopOut4Choice0"].Text:SetText("Default Color")
-		_G["abfOptions"..i.."Box"..k.."PopOut4Choice1"].Text:SetText("Class Color")
-		_G["abfOptions"..i.."Box"..k.."PopOut4Choice2"].Text:SetText("Custom Color")
+		_G["abfOptions"..i.."Box"..k.."PopOut4Choice1"].Text:SetText("Custom Color")
+		_G["abfOptions"..i.."Box"..k.."PopOut4Choice2"].Text:SetText("Class Color")
 	end
 -- naming slot,edges,border colors --
 	for k = 3, 9, 3 do
 		_G["abfOptions"..i.."Box"..k.."PopOut1Choice0"].Text:SetText("Default Color")
-		_G["abfOptions"..i.."Box"..k.."PopOut1Choice1"].Text:SetText("Class Color")
-		_G["abfOptions"..i.."Box"..k.."PopOut1Choice2"].Text:SetText("Custom Color")
+		_G["abfOptions"..i.."Box"..k.."PopOut1Choice1"].Text:SetText("Custom Color")
+		_G["abfOptions"..i.."Box"..k.."PopOut1Choice2"].Text:SetText("Class Color")
 	end
 -- naming slot,edges,border gradient 1 & 2 --
 	for k = 4, 10, 3 do
 		for j = 1, 2, 1 do
 			_G["abfOptions"..i.."Box"..k.."PopOut"..j.."Choice0"].Text:SetText("Default Color")
-			_G["abfOptions"..i.."Box"..k.."PopOut"..j.."Choice1"].Text:SetText("Class Color")
-			_G["abfOptions"..i.."Box"..k.."PopOut"..j.."Choice2"].Text:SetText("Custom Color")
+			_G["abfOptions"..i.."Box"..k.."PopOut"..j.."Choice1"].Text:SetText("Custom Color")
+			_G["abfOptions"..i.."Box"..k.."PopOut"..j.."Choice2"].Text:SetText("Class Color")
 		end
 	end
 -- naming slot,edges,border color mode --
@@ -333,21 +333,21 @@ for i = 1, 8, 1 do
 -- naming top,bottom animation color --
 	for k = 1, 4, 3 do
 		_G["abfOptions"..i.."aBox"..k.."PopOut4Choice0"].Text:SetText("Default Color")
-		_G["abfOptions"..i.."aBox"..k.."PopOut4Choice1"].Text:SetText("Class Color")
-		_G["abfOptions"..i.."aBox"..k.."PopOut4Choice2"].Text:SetText("Custom Color")
+		_G["abfOptions"..i.."aBox"..k.."PopOut4Choice1"].Text:SetText("Custom Color")
+		_G["abfOptions"..i.."aBox"..k.."PopOut4Choice2"].Text:SetText("Class Color")
 	end
 -- naming top,bottom,Normal Texture colors --
 	for k = 2, 8, 3 do
 		_G["abfOptions"..i.."aBox"..k.."PopOut1Choice0"].Text:SetText("Default Color")
-		_G["abfOptions"..i.."aBox"..k.."PopOut1Choice1"].Text:SetText("Class Color")
-		_G["abfOptions"..i.."aBox"..k.."PopOut1Choice2"].Text:SetText("Custom Color")
+		_G["abfOptions"..i.."aBox"..k.."PopOut1Choice1"].Text:SetText("Custom Color")
+		_G["abfOptions"..i.."aBox"..k.."PopOut1Choice2"].Text:SetText("Class Color")
 	end
 -- naming top,bottom,Normal Texture gradient 1 & 2 --
 	for k = 3, 9, 3 do
 		for j = 1, 2, 1 do
 			_G["abfOptions"..i.."aBox"..k.."PopOut"..j.."Choice0"].Text:SetText("Default Color")
-			_G["abfOptions"..i.."aBox"..k.."PopOut"..j.."Choice1"].Text:SetText("Class Color")
-			_G["abfOptions"..i.."aBox"..k.."PopOut"..j.."Choice2"].Text:SetText("Custom Color")
+			_G["abfOptions"..i.."aBox"..k.."PopOut"..j.."Choice1"].Text:SetText("Custom Color")
+			_G["abfOptions"..i.."aBox"..k.."PopOut"..j.."Choice2"].Text:SetText("Class Color")
 		end
 	end
 -- naming top,bottom,Normal Texture orientation --
