@@ -32,7 +32,6 @@
 						<Frames>
 							<Button name="$parentChoice1" inherits="abfPopOutButton"/>
 							<Button name="$parentChoice2" inherits="abfPopOutButton"/>
-							<Button name="$parentChoice3" inherits="abfPopOutButton"/>
 						</Frames>
 					</Button>
 <!-- Box 1, Pop Out Button 1, Hot Key Fonts -->
@@ -131,7 +130,6 @@
 						<Frames>
 							<Button name="$parentChoice1" inherits="abfPopOutButton"/>
 							<Button name="$parentChoice2" inherits="abfPopOutButton"/>
-							<Button name="$parentChoice3" inherits="abfPopOutButton"/>
 						</Frames>
 					</Button>
 				</Frames>
@@ -157,7 +155,6 @@
 						<Frames>
 							<Button name="$parentChoice1" inherits="abfPopOutButton"/>
 							<Button name="$parentChoice2" inherits="abfPopOutButton"/>
-							<Button name="$parentChoice3" inherits="abfPopOutButton"/>
 						</Frames>
 					</Button>
 <!-- Box 4, Pop Out Button 2, Color Gradient two -->
@@ -168,7 +165,6 @@
 						<Frames>
 							<Button name="$parentChoice1" inherits="abfPopOutButton"/>
 							<Button name="$parentChoice2" inherits="abfPopOutButton"/>
-							<Button name="$parentChoice3" inherits="abfPopOutButton"/>
 						</Frames>
 					</Button>
 				</Frames>
@@ -198,7 +194,6 @@
 						<Frames>
 							<Button name="$parentChoice1" inherits="abfPopOutButton"/>
 							<Button name="$parentChoice2" inherits="abfPopOutButton"/>
-							<Button name="$parentChoice3" inherits="abfPopOutButton"/>
 						</Frames>
 					</Button>
 <!-- Box 5, Pop Out Button 1, Edge Art Choices -->
@@ -252,7 +247,6 @@
 						<Frames>
 							<Button name="$parentChoice1" inherits="abfPopOutButton"/>
 							<Button name="$parentChoice2" inherits="abfPopOutButton"/>
-							<Button name="$parentChoice3" inherits="abfPopOutButton"/>
 						</Frames>
 					</Button>
 				</Frames>
@@ -278,7 +272,6 @@
 						<Frames>
 							<Button name="$parentChoice1" inherits="abfPopOutButton"/>
 							<Button name="$parentChoice2" inherits="abfPopOutButton"/>
-							<Button name="$parentChoice3" inherits="abfPopOutButton"/>
 						</Frames>
 					</Button>
 <!-- Box 7, Pop Out Button 2, Color Gradient Two -->
@@ -289,7 +282,6 @@
 						<Frames>
 							<Button name="$parentChoice1" inherits="abfPopOutButton"/>
 							<Button name="$parentChoice2" inherits="abfPopOutButton"/>
-							<Button name="$parentChoice3" inherits="abfPopOutButton"/>
 						</Frames>
 					</Button>
 				</Frames>
@@ -340,7 +332,6 @@
 						<Frames>
 							<Button name="$parentChoice1" inherits="abfPopOutButton"/>
 							<Button name="$parentChoice2" inherits="abfPopOutButton"/>
-							<Button name="$parentChoice3" inherits="abfPopOutButton"/>
 						</Frames>
 					</Button>
 				</Frames>
@@ -366,7 +357,6 @@
 						<Frames>
 							<Button name="$parentChoice1" inherits="abfPopOutButton"/>
 							<Button name="$parentChoice2" inherits="abfPopOutButton"/>
-							<Button name="$parentChoice3" inherits="abfPopOutButton"/>
 						</Frames>
 					</Button>
 <!-- Box 10, Pop Out Button 2, Border Color Gradient two -->
@@ -377,7 +367,6 @@
 						<Frames>
 							<Button name="$parentChoice1" inherits="abfPopOutButton"/>
 							<Button name="$parentChoice2" inherits="abfPopOutButton"/>
-							<Button name="$parentChoice3" inherits="abfPopOutButton"/>
 						</Frames>
 					</Button>
 				</Frames>
