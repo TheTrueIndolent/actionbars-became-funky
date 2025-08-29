@@ -1,10 +1,21 @@
-## Interface: 110100
+## Interface: 110200
+## Category: Action Bars
+## Category-deDE: Aktionsleisten
+## Category-esES: Barras de acción
+## Category-esMX: Barras de acción
+## Category-frFR: Barres d’action
+## Category-itIT: Barre delle azioni
+## Category-koKR: 행동 단축바
+## Category-ptBR: Barras de ação
+## Category-ruRU: Панели команд
+## Category-zhCN: 动作条
+## Category-zhTW: 快捷列
 ## Title: Actionbars Became |cffFF8000Funky|r Arts
 ## Notes: |cffF0E68CArtworks for the |cffFF8000Actionbars|r Became |cffFF8000Funky|r|r!
 ## IconTexture: Interface\DialogFrame\UI-Dialog-Icon-AlertOther
 ## DefaultState: enabled
 ## Dependencies: ABF
-## Version: 1.16
+## Version: 1.17
 ## Author: The_Indolent
 ## X-Website: https://panosanastasiou.rocks/
 
@@ -20,3 +31,4 @@ ABF_BorderArt.lua
 ABF_BorderArt_Functions.lua
 ABF_StatusTrackingBar.xml
 ABF_Animations.xml
+
